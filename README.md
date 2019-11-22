@@ -98,6 +98,8 @@ new OBSPlugin({
 
 ```javascript
 const OBSPlugin = require("huawei-obs-plugin");
+const path = require("path");
+
 new OBSPlugin({
   accessKeyId: "2****************9",
   accessKeySecret: "z**************=",
