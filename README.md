@@ -5,7 +5,7 @@
 # 安装
 
 ```
-npm i huawei-obs-plugin --save
+npm i huawei-obs-plugin --save-dev
 ```
 
 # 参数
