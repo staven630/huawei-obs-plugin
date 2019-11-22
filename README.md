@@ -109,4 +109,3 @@ new OBSPlugin({
   local: true
 }).upload();
 ```
-# huawei-obs-plugin
