@@ -13,7 +13,7 @@ npm i huawei-obs-plugin --save-dev
 | 选项名          | 类型                 | 是否必填 | 默认值 | 描述                                                                                                                  |
 | :-------------- | :------------------- | :------- | :----- | :-------------------------------------------------------------------------------------------------------------------- |
 | accessKeyId     | String               | √        |        | 华为云 Access Key Id（AK）：访问密钥 ID                                                                               |
-| accessKeySecret | String               | √        |        | 华为云 Secret Access Key（SK）：与访问密钥 ID 结合使用的私有访问密钥                                                  |
+| secretAccessKey | String               | √        |        | 华为云 Secret Access Key（SK）：与访问密钥 ID 结合使用的私有访问密钥                                                  |
 | bucket          | String               | √        |        | 华为云 bucket                                                                                                         |
 | server          | String               | √        | ''     | [终端节点（Endpoint)](https://developer.huaweicloud.com/endpoint?OBS)                                                 |
 | prefix          | String               | ×        | ''     | 自定义路径前缀，通常使用项目目录名，文件将存放在 obs 的 bucket/prefix 目录下                                          |
@@ -46,7 +46,7 @@ const OBSPlugin = require("huawei-obs-plugin");
 
 new OBSPlugin({
   accessKeyId: "2****************9",
-  accessKeySecret: "z**************=",
+  secretAccessKey: "z**************=",
   bucket: "staven",
   prefix: "nuxt-doc", // "staven/nuxt-doc/icon_696aaa22.ttf"
   exclude: [/.*\.html$/], // 或者 /.*\.html$/,排除.html文件的上传
@@ -62,7 +62,7 @@ const path = require("path");
 
 new OBSPlugin({
   accessKeyId: "2****************9",
-  accessKeySecret: "z**************=",
+  secretAccessKey: "z**************=",
   server: "https://obs.cn-east-2.myhuaweicloud.com",
   bucket: "staven",
   prefix: "nuxt-doc", // "staven/nuxt-doc/icon_696aaa22.ttf"
@@ -80,7 +80,7 @@ const time = OBSPlugin.getFormat('YYMMDD')
 
 new OBSPlugin({
   accessKeyId: "2****************9",
-  accessKeySecret: "z**************=",
+  secretAccessKey: "z**************=",
   server: "https://obs.cn-east-2.myhuaweicloud.com",
   bucket: "staven",
   prefix: 'nuxt-doc',   // "staven/nuxt-doc/icon_696aaa22.ttf"
@@ -102,7 +102,7 @@ const path = require("path");
 
 new OBSPlugin({
   accessKeyId: "2****************9",
-  accessKeySecret: "z**************=",
+  secretAccessKey: "z**************=",
   server: "https://obs.cn-east-2.myhuaweicloud.com",
   bucket: "staven",
   exclude: null,
